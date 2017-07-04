@@ -6,12 +6,17 @@
 
 import React from 'react';
 import {
-  AppRegistry
+  AppRegistry,
+  View
 } from 'react-native';
 import Header from './src/components/header';
+import AlbumList from './src/components/AlbumList';
 
 const App = () => (
-  <Header label={'Albums'} />
+  <View>
+    <Header label={'Albums'} />
+    <AlbumList />
+  </View>
 );
 
 AppRegistry.registerComponent('albums', () => App);
