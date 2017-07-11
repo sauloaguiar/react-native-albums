@@ -3,7 +3,7 @@ import { ScrollView } from 'react-native';
 import axios from 'axios';
 import { AlbumDetail } from './AlbumDetail';
 
-export default class AlbumList extends Component {
+export class AlbumList extends Component {
   state = { albums: [] };
   
   componentWillMount() {
@@ -15,7 +15,6 @@ export default class AlbumList extends Component {
     return this.state.albums.map(album => <AlbumDetail key={album.title} album={album} />);
   }
   render() {
-    console.log(this.state);
     return (
       <ScrollView>
         {this.renderAlbums()}
