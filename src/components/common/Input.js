@@ -12,7 +12,7 @@ export const Input = ({ label, placeholder, value, onChangeText, secureTextEntry
         style={inputStyle}
         value={value}
         onChangeText={onChangeText}
-        secureTextEntry
+        secureTextEntry={secureTextEntry}
       />
     </View>
   );

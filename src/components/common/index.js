@@ -5,3 +5,4 @@ export * from './AlbumList';
 export * from './AlbumDetail';
 export * from './Header';
 export * from './Input';
+export * from './Spinner';
